@@ -49,6 +49,7 @@ npm install --save-dev rn-nodefiy
 3. Next, you will have to install and link `@react-native-community/async-storage` so that you can use the [RNLocalStorage](https://gist.github.com/mascot6699/8a1a3cf2afa411f643fe9ec1bab3e9c2) implementation of `storage.StorageService` as shown below.
 ```
 npm install --save @react-native-community/async-storage
+react-native link @react-native-community/async-storage
 ```
 
 ```javascript
