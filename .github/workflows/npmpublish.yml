@@ -1,0 +1,25 @@
+name: NPMJS prod publishing
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - name: Publishing to NPM registry
+        run: npm run publish:prod
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: Notify on Slack
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_WEBHOOK: ${{secrets.slack_webhook}}

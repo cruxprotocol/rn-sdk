@@ -1,0 +1,1 @@
+Refer to the documentation at [@cruxprotocol/js-sdk](https://github.com/cruxprotocol/js-sdk)
