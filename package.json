@@ -1,6 +1,6 @@
 {
   "name": "@cruxpay/rn-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CruxPay React Native SDK",
   "unpkg": "dist/cruxpay-sdk-rn.js",
   "main": "index.js",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/cruxprotocol/rn-sdk#readme",
   "dependencies": {
-    "@cruxpay/js-sdk": "0.1.5"
+    "@cruxpay/js-sdk": "0.1.8"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
