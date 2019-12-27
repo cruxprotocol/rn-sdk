@@ -1,6 +1,6 @@
 {
   "name": "@cruxpay/rn-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CruxPay React Native SDK",
   "unpkg": "dist/cruxpay-sdk-rn.js",
   "main": "index.js",
